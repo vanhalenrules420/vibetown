@@ -1,0 +1,41 @@
+{
+  "name": "vibe-town-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node tests/firebase-test.js",
+    "firebase": "firebase",
+    "deploy:functions": "firebase deploy --only functions",
+    "serve:functions": "firebase serve --only functions",
+    "dev": "firebase emulators:start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Vibe Town - A multiplayer social space with Phaser, Colyseus, and Firebase",
+  "dependencies": {
+    "@colyseus/schema": "^2.0.15",
+    "colyseus": "^0.15.15",
+    "firebase": "^11.4.0",
+    "phaser": "^3.88.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.13",
+    "winston": "^3.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.0",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "typescript": "^5.4.2",
+    "firebase-tools": "^13.34.0"
+  }
+}
